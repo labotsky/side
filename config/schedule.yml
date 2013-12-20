@@ -1,0 +1,7 @@
+my:
+  cron: "*/10 * * * * *"
+  class: "SmallWorker"
+  args:
+    name: "alice"
+    age: 20
+
