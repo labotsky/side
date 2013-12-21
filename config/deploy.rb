@@ -1,6 +1,4 @@
 # RVM
-
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
 set :rvm_ruby_string, 'default'
 set :rvm_type, :user
@@ -22,7 +20,7 @@ set :use_sudo, false
 # Git
 
 set :scm, :git
-set :repository,  "~/#{application}/.git"
+set :repository,  "git@github.com:labotsky/side.git"
 set :branch, "master"
 
 # VPS
