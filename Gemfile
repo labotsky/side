@@ -40,6 +40,7 @@ end
 
 # Use Capistrano for deployment
 gem 'capistrano', '~>2.13.3', group: :development
+gem 'rvm-capistrano'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem "sidekiq-cron", "~> 0.1.0"
