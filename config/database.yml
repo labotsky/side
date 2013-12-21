@@ -48,7 +48,7 @@ test:
 
 production:
   adapter: postgresql
-  host:localhost
+  host: localhost
   encoding: unicode
   database: test_app_production
   pool: 5
