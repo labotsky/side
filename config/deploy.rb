@@ -6,7 +6,7 @@ set :rvm_type, :user
 # Bundler
 
 require "bundler/capistrano"
-
+require 'sidekiq/capistrano'
 # General
 
 set :application, "side"
