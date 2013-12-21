@@ -1,3 +1,4 @@
+# $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 # RVM
 require "rvm/capistrano"
 set :rvm_ruby_string, 'default'
@@ -39,3 +40,4 @@ namespace :deploy do
    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
  end
 end
+after "deploy:restart", "deploy:cleanup"
